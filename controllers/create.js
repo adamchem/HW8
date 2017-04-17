@@ -9,6 +9,6 @@ module.exports = function(req, res, next){
         //     if(err) throw err;
         //     res.json({userinfos: users});
         // });
-        res.render('file1');
+        res.render('file1', {userinfos: users});
     });
 };
