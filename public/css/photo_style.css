@@ -1,0 +1,34 @@
+h1{
+  margin-left: 80px;
+}
+.list{
+  width: 400px;
+  height: auto;
+  margin-left: 80px;
+  float: left;
+}
+.list ul{
+  padding: 0px;
+}
+.list ul li{
+  width: 200px;
+  height: 60px;
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 28px;
+  list-style-type: none;
+  -webkit-transition: font-size 1s;
+  transition: font-size 1s;
+}
+.list ul li:hover{
+  font-size: 36px;
+  cursor: pointer;
+}
+.photo{
+  width: 500px;
+  height: 500px;
+  margin-left: 45%;
+}
+.photo img{
+  display: none;
+}
