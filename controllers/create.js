@@ -5,9 +5,10 @@ module.exports = function(req, res, next){
     form.save(function(err){
         if(err) throw err;
         console.log('created');
-        Form.find({}, function(err, users){
-            if(err) throw err;
-            res.json({userinfos: users});
-        });
+        // Form.find({}, function(err, users){
+        //     if(err) throw err;
+        //     res.json({userinfos: users});
+        // });
+        res.render('file1');
     });
 };
