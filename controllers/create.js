@@ -7,7 +7,7 @@ module.exports = function(req, res, next){
         console.log('created');
         Form.find({}, function(err, users){
             if(err) throw err;
-            res.render('file1', {userinfos: users});
+            res.json({userinfos: users});
         });
     });
 };
