@@ -7,7 +7,7 @@ $(function(){
                   'pic/gold_house.jpg',
                   'pic/white_house.jpg'];
 
-  $(".list ul li").click(function(){
+  $(".list ul li").on("click",function(){
     _select = $(this);//set object
     var num = $(".list ul li").index(_select);
     if(_index !== num){
@@ -15,11 +15,9 @@ $(function(){
       $(".list ul li").fadeTo("fast",1);
       _select.fadeTo("fast",0.5);
       $(".photo img").fadeOut(500,function(){
-//         $(this)
-//           .attr("src", picture[_index])
-//           .fadeIn(500);
-        var urlRelative = $(this).attr("src");
-        $(this).attr("src").replace(urlRelative, picture[_index]).fadeIn(500);
+        $(this)
+          .attr("src", picture[_index])
+          .fadeIn(500);
       });
     }
   });
