@@ -15,7 +15,8 @@ $(function(){
       $(".list ul li").fadeTo("fast",1);
       _select.fadeTo("fast",0.5);
       $(".photo img").fadeOut(500,function(){
-        $(".photo img")
+        $(this).css("display", "none");
+        $(this)
           .attr("src", picture[_index])
           .fadeIn(500);
       });
