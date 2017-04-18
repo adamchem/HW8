@@ -17,9 +17,7 @@ $(function(){
       $(".photo img").fadeOut(500,function(){
         $(".photo img")
           .attr("src", picture[_index])
-          .one("load", function(){
-          fadeIn(500);
-          });
+          .fadeIn(500);
       });
     }
   });
