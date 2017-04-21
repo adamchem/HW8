@@ -68,12 +68,15 @@ body{
   left: 500px;
   cursor:move;
 }
-.form{
+#usernew{
   margin-left: 200px;
   float: left;
 }
-.store{
+#userinfo{
   margin-left: 60%;
+}
+#userupdate{
+  
 }
 .footer{
   clear: both;
