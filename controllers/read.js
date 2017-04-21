@@ -1,10 +1,10 @@
 var Form = require("../models/form");
 
 module.exports = function(req, res, next){
-    form.findOne({_id: body.params.id}, function(err, users){
+    Form.findOne({_id: req.params.id}, function(err, user){
         if(err) throw err;
         console.log('readed');
        
-        res.json({userinfos: users});
+        res.json({userinfo: user});
     });
 };
