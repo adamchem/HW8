@@ -1,11 +1,11 @@
 $(function(){
   var _select; //object now selected
   var _index;//number
-  var picture = [ '../public/pic/ghost_house.jpg',
-                  '../public/pic/wood_house.jpg',
-                  '../public/pic/stone_house.jpg',
-                  '../public/pic/gold_house.jpg',
-                  '../public/pic/white_house.jpg'];
+  var picture = [ 'pic/ghost_house.jpg',
+                  'pic/wood_house.jpg',
+                  'pic/stone_house.jpg',
+                  'pic/gold_house.jpg',
+                  'pic/white_house.jpg'];
 
   $(".list ul li").on("click",function(){
     _select = $(this);//set object
