@@ -73,10 +73,37 @@ body{
   float: left;
 }
 #userinfo{
+  width: 350px;
+  height: 250px;
+  overflow: auto;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
   margin-left: 60%;
+  background-color: #c2c2c2
+}
+#userinfo h1{
+  margin: 0;
+  margin-left: 35px;
+}
+#userinfo ul{
+  list-style-type: none;
+}
+#userinfo a{
+  font-size: 16px;
+  text-decoration: none;
 }
 #userupdate{
-  
+  clear: both;
+  margin-top: 10px;
+  width:340px;
+  height: auto;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  font-size: 20px;
+  margin-left: 60%;
+  border-radius: 10px;
+  background-color: #c2c2c2
 }
 .footer{
   clear: both;
