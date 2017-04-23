@@ -17,13 +17,13 @@ $(document).ready(function() {
 // Create User
 function createUser(event) {
     // Super basic validation - increase errorCount variable if any fields are blank
-    var errorCount = 0;
-    $('#usernew input').each(function(index, val) {
-        if($(this).val() === '') { errorCount++; }
-    });
-
+    // var errorCount = 0;
+    // $('#usernew input').each(function(index, val) {
+    //     if($(this).val() === '') { errorCount++; }
+    // });
+    
     // Check and make sure errorCount's still at zero
-    if(errorCount === 0) {
+    if($('input#name').val() !== '') {
       var newUser = {
         'name': $('input#name').val(),
         'age': $('input#age').val(),
@@ -44,7 +44,7 @@ function createUser(event) {
     }
     else {
       // If errorCount is more than 0, error out
-      alert('Please fill in all fields');
+      alert('Please fill the name');
       return false;
     }
 };
@@ -113,6 +113,7 @@ function deleteUser(event) {
         }).done(function( res ) {
           var html = new EJS({url: 'views/persons.ejs'}).render(res);
           $("#userinfo").html(html);
+          $("#userupdate").html('');
         });
 
     }
