@@ -73,7 +73,7 @@ body{
   float: left;
 }
 #userinfo{
-  width: 350px;
+  width: 340px;
   height: 250px;
   overflow: auto;
   padding: 10px;
@@ -96,14 +96,16 @@ body{
 #userupdate{
   clear: both;
   margin-top: 10px;
-  width:340px;
-  height: auto;
-  padding-bottom: 10px;
-  padding-left: 30px;
+  width:260px;
+  height: 160px;
+  padding: 10px 50px;
   font-size: 20px;
   margin-left: 60%;
   border-radius: 10px;
   background-color: #c2c2c2
+}
+#userupdate h1{
+  margin: 0;
 }
 .footer{
   clear: both;
