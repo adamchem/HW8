@@ -27,6 +27,10 @@ h1{
 #data_send:active{
   background-color: #bbb;
 }
+.status{
+  font-size: 30px;
+  color: red;
+}
 .info{
   width: 500px;
   height: 500px;
