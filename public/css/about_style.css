@@ -22,9 +22,10 @@ h1{
   text-align: center;
   cursor: pointer;
   background-color: #fff;
+  color: #000;
 }
 #data_send:active{
-  background-color: #eee;
+  background-color: #bbb;
 }
 .info{
   width: 500px;
